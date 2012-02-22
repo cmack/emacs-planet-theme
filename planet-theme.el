@@ -3,7 +3,7 @@
 ;; Copyright (C) 2012 Charlie McMackin
 
 ;; Author: Charlie McMackin <charlie.mac@gmail.com>
-;; URL: http://github.com/cmack/planet-theme
+;; URL: https://github.com/cmack/emacs-planet-theme
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
