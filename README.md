@@ -20,15 +20,15 @@ well defined and feature-full.
 After downloading, place `planet-theme.el` in a folder in your Emacs'
 `custom-theme` load path.  I have mine defined in `.emacs` as:
 
-`(add-to-list 'custom-theme-load-path "~/.emacs.d/themes")`
+    (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
 
 Once the file is loaded, it can be applied interactively with
 
-`M-x load-theme RET planet` 
+    M-x load-theme RET planet 
 
 or by default in your `.emacs` file with
 
-`(load-theme 'planet t)`.
+    (load-theme 'planet t)
 
 # Bugs & Improvements
 
