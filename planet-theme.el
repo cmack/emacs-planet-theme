@@ -71,11 +71,11 @@
 
    ;; font-lock
    '(font-lock-comment-face ((t (:foreground "grey40" :italic t))))
-   '(font-lock-constant-face ((t (:foreground "#5229a3"))))
+   '(font-lock-constant-face ((t (:foreground "#a6a1ea"))))
    '(font-lock-function-name-face ((t (:foreground "#729fcf" :bold t))))
-   '(font-lock-string-face ((t (:foreground "#f57900" :bold t)))) 
+   '(font-lock-string-face ((t (:foreground "#649d8a" :bold t)))) 
    '(font-lock-type-face ((t (:foreground "#e9b96e"))))
-   '(font-lock-warning-face ((t (:foreground "red" :bold t))))
+   '(font-lock-warning-face ((t (:foreground "#ff8683" :bold t))))
    `(font-lock-builtin-face ((,class (:bold t :foreground ,planet-fg-1))))
    `(font-lock-keyword-face ((,class (:foreground ,planet-fg-2 :bold t))))
    `(font-lock-variable-name-face ((,class (:foreground ,planet-fg-2))))
