@@ -89,6 +89,8 @@
 
 
    ;; cperl
+   `(cperl-array-face ((,class (:foreground ,planet-fg-1 :weight normal))))
+   `(cperl-hash-face ((,class (:foreground ,planet-fg-1 :weight normal))))
 
    ;; org
 
