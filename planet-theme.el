@@ -38,7 +38,9 @@
       (planet-bg "#192129")
       (planet-bg-2 "#090c10")
       (planet-bg-3 "#243248")
-      (planet-bg-4 "#2A3A53"))
+      (planet-bg-4 "#2A3A53")
+      (planet-warning "#e9b96e")
+      (planet-error "#ff8683"))
   (custom-theme-set-faces
    'planet
 
@@ -75,7 +77,7 @@
    '(font-lock-function-name-face ((t (:foreground "#729fcf" :bold t))))
    '(font-lock-string-face ((t (:foreground "#649d8a" :bold t)))) 
    '(font-lock-type-face ((t (:foreground "#e9b96e"))))
-   '(font-lock-warning-face ((t (:foreground "#ff8683" :bold t))))
+   `(font-lock-warning-face ((,class (:foreground ,planet-error :bold t))))
    `(font-lock-builtin-face ((,class (:bold t :foreground ,planet-fg-1))))
    `(font-lock-keyword-face ((,class (:foreground ,planet-fg-2 :bold t))))
    `(font-lock-variable-name-face ((,class (:foreground ,planet-fg-2))))
@@ -86,7 +88,11 @@
    ;; '(font-lock-negation-char-face ((t (:foreground "#c3ab15"))))
    ;; '(font-lock-preprocessor-face ((t (:foreground "#c3ab15" :weight bold))))
 
-
+   ;; js2
+   `(js2-warning-face ((,class (:underline ,planet-warning))))
+   `(js2-error-face ((,class (:foreground ,planet-error))))
+   `(js2-external-variable-face ((,class (:foreground ,planet-warning))))
+   '(js2-function-param-face ((,class (:foreground "#649d8a"))))
 
    ;; cperl
    `(cperl-array-face ((,class (:foreground ,planet-fg-1 :weight normal))))
