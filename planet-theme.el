@@ -32,15 +32,15 @@
 (deftheme planet "The Planet color theme")
 
 (let ((class '((class color) (min-colors 89)))
-      (planet-fg "#8898a9")
-      (planet-fg-1 "#d2dde8")
-      (planet-fg-2 "#c4dde8")
-      (planet-bg "#192129")
-      (planet-bg-2 "#090c10")
-      (planet-bg-3 "#243248")
-      (planet-bg-4 "#2A3A53")
+      (planet-fg      "#8898a9")
+      (planet-fg-1    "#d2dde8")
+      (planet-fg-2    "#c4dde8")
+      (planet-bg      "#192129")
+      (planet-bg-2    "#090c10")
+      (planet-bg-3    "#243248")
+      (planet-bg-4    "#2A3A53")
       (planet-warning "#e9b96e")
-      (planet-error "#ff8683"))
+      (planet-error   "#ff8683"))
   (custom-theme-set-faces
    'planet
 
@@ -66,7 +66,7 @@
    ;; `(mode-line-buffer-id              ((,class (:background ,planet-bg-4 :foreground "white"))))
    `(mode-line                           ((,class (:background ,planet-bg-4 :foreground ,planet-fg-2))))
    `(mode-line-buffer-id                 ((,class (:background nil :foreground ,planet-fg-1))))
-   `(mode-line-highlight                 ((,class (:box (:line-width 2 :color ,planet-bg-2 :style released-button)))))
+   `(mode-line-highlight                 ((,class (:box (:line-width 1 :color ,planet-bg-2 :style released-button)))))
    `(mode-line-inactive                  ((,class (:background ,planet-bg-2 :foreground "#8095ab" :box (:line-width -1 :color ,planet-bg-2 :style nil) :weight light))))
    `(modeline-mousable                   ((t (:background ,planet-bg-4 :foreground ,planet-fg-2))))
    `(modeline-mousable-minor-mode        ((t (:background ,planet-bg-4 :foreground ,planet-fg-2))))
@@ -92,7 +92,7 @@
    `(js2-warning-face                    ((,class (:underline ,planet-warning))))
    `(js2-error-face                      ((,class (:foreground ,planet-error))))
    `(js2-external-variable-face          ((,class (:foreground ,planet-warning))))
-   '(js2-function-param-face             ((,class (:foreground "#649d8a"))))
+   '(js2-function-param-face             ((t (:foreground "#649d8a"))))
 
    ;; cperl
    `(cperl-array-face                    ((,class (:foreground ,planet-fg-1 :weight normal))))
@@ -105,18 +105,19 @@
    '(erc-bold-face                       ((t (:bold t :weight bold))))
    '(erc-command-indicator-face          ((t (:bold t :weight bold))))
    '(erc-default-face                    ((t (nil))))
-   '(erc-direct-msg-face                 ((t (:foreground "IndianRed"))))
+   '(erc-direct-msg-face                 ((t (:foreground "#e9b96e"))))
    '(erc-error-face                      ((t (:foreground "red"))))
    '(erc-input-face                      ((t (:foreground "brown"))))
-   '(erc-inverse-face                    ((t (:background "Black" :foreground "White"))))
+   `(erc-inverse-face                    ((,class (:background ,planet-fg :foreground ,planet-bg))))
    '(erc-my-nick-face                    ((t (:bold t :foreground "brown" :weight bold))))
    '(erc-nick-default-face               ((t (:bold t :weight bold))))
    '(erc-nick-msg-face                   ((t (:bold t :foreground "IndianRed" :weight bold))))
    '(erc-notice-face                     ((t (:bold t :foreground "SlateBlue" :weight bold))))
-   '(erc-prompt-face                     ((t (:bold t :background "lightBlue2" :foreground "Black" :weight bold))))
+   `(erc-prompt-face                     ((,class (:bold t :background ,planet-bg :foreground "#729fcf" :weight bold))))
    '(erc-underline-face                  ((t (:underline t))))
    `(erc-header-line                     ((,class (:background ,planet-bg-3 :foreground ,planet-fg))))
-
+   '(erc-current-nick-face               ((t (:bold t :foreground "DarkTurquoise"))))
+   ;; '(erc-timestamp-face                  ((t (:bold t :foreground "green"))))
    ;; whitespace-mode
 
    ;; show-paren
