@@ -95,8 +95,8 @@
    '(js2-function-param-face             ((t (:foreground "#649d8a"))))
 
    ;; cperl
-   `(cperl-array-face                    ((,class (:foreground ,planet-fg-1 :weight normal))))
-   `(cperl-hash-face                     ((,class (:foreground ,planet-fg-1 :weight normal))))
+   `(cperl-array-face                    ((,class (:foreground ,planet-fg-2 :background ,planet-bg :bold t))))
+   `(cperl-hash-face                     ((,class (:foreground ,planet-fg-2 :background ,planet-bg :bold t))))
 
    ;; org
 
