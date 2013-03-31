@@ -91,6 +91,13 @@
    ;; '(font-lock-negation-char-face     ((t (:foreground "#c3ab15"))))
    ;; '(font-lock-preprocessor-face      ((t (:foreground "#c3ab15" :weight bold))))
 
+   ;; slime
+   `(slime-repl-inputed-output-face      ((,class (:foreground ,planet-purple))))
+   `(slime-error-face                    ((,class (:underline ,planet-error))))
+   `(slime-warning-face                  ((,class (:underline ,planet-warning))))
+   ;; `(slime-note-face                     ((,class (:underline ,planet-warning))))
+   ;; `(slime-style-warning-face            ((,class (:underline ,planet-warning))))
+
    ;; js2
    `(js2-warning-face                    ((,class (:underline ,planet-warning))))
    `(js2-error-face                      ((,class (:foreground ,planet-error))))
