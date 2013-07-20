@@ -66,7 +66,6 @@
 
    ;; mode-line
    '(mode-line-emphasis                  ((t (:bold t :weight bold))))
-   ;; `(mode-line-buffer-id              ((,class (:background ,planet-bg-4 :foreground "white"))))
    `(mode-line                           ((,class (:background ,planet-bg-4 :foreground ,planet-fg-2))))
    `(mode-line-buffer-id                 ((,class (:foreground ,planet-fg-1))))
    `(mode-line-highlight                 ((,class (:box (:line-width 1 :color ,planet-bg-2 :style released-button)))))
@@ -78,7 +77,7 @@
    '(font-lock-comment-face              ((t (:foreground "grey40" :italic t))))
    `(font-lock-constant-face             ((,class (:foreground ,planet-purple))))
    `(font-lock-function-name-face        ((,class (:foreground ,planet-blue :bold t))))
-   `(font-lock-string-face               ((,class (:foreground ,planet-green :bold t))))
+   `(font-lock-string-face               ((,class (:foreground ,planet-green :bold nil))))
    '(font-lock-type-face                 ((t (:foreground "#e9b96e"))))
    `(font-lock-warning-face              ((,class (:foreground ,planet-error :bold t))))
    `(font-lock-builtin-face              ((,class (:bold t :foreground ,planet-fg-1))))
@@ -101,8 +100,8 @@
    ;; js2
    `(js2-warning-face                    ((,class (:underline ,planet-warning))))
    `(js2-error-face                      ((,class (:foreground ,planet-error))))
-   `(js2-external-variable-face          ((,class (:foreground ,planet-warning))))
-   `(js2-function-param-face             ((,class (:foreground ,planet-green))))
+   `(js2-external-variable               ((,class (:foreground ,planet-warning))))
+   `(js2-function-param                  ((,class (:foreground ,planet-green))))
 
    ;; cperl
    `(cperl-array-face                    ((,class (:foreground ,planet-fg-2 :background ,planet-bg :bold t))))
