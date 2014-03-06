@@ -1,9 +1,12 @@
-;; planet-theme.el -- Theme inspired by a theme of the same name once used by a big-name web email provider.
+;;; planet-theme.el -- A dark theme inspired by Gmail's 'Planets' theme of yore.
 
-;; Copyright (C) 2012 Charlie McMackin
+;; Copyright (C) 2012 - 2014 Charlie McMackin
 
 ;; Author: Charlie McMackin <charlie.mac@gmail.com>
 ;; URL: https://github.com/cmack/emacs-planet-theme
+;; Keywords: themes
+;; Version: 0.1
+;; Package-Requires: ((emacs "24.1"))
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -18,18 +21,24 @@
 ;; You should have received a copy of the GNU General Public License
 ;; along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-;; Requirements:
 
-;; Emacs 24
 
-;; Credits:
+;;; Commentary:
+
+;; Requirements: Emacs 24
+;;
+;; Source and preview screenshots can be found on github:
+;; https://github.com/cmack/emacs-planet-theme
+
+;;; Credits:
 
 ;; I started this theme's color palette based on a Google Gmail theme by the same
 ;; name. Google has since changed that theme completely but I still enjoy the
 ;; readability of the original. Palette wise, I plan to keep the ground colors
 ;; the same but will add accent colors as I find them and feel they fit.
 
-(deftheme planet "The Planet color theme")
+(deftheme planet
+  "A dark theme inspired by Gmail's 'Planets' theme of yore")
 
 (let ((class '((class color) (min-colors 89)))
       (planet-fg      "#8898a9")
@@ -166,8 +175,11 @@
    ))
 
 ;;;###autoload
-(when load-file-name
+(when (and (boundp 'custom-theme-load-path)
+           load-file-name)
   (add-to-list 'custom-theme-load-path
                (file-name-as-directory (file-name-directory load-file-name))))
 
 (provide-theme 'planet)
+
+;;; planet-theme.el ends here
