@@ -1,4 +1,4 @@
-;;; planet-theme.el -- A dark theme inspired by Gmail's 'Planets' theme of yore.
+;;; planet-theme.el --- A dark theme inspired by Gmail's 'Planets' theme of yore.
 
 ;; Copyright (C) 2012 - 2014 Charlie McMackin
 
