@@ -116,6 +116,15 @@
    `(cperl-array-face                    ((,class (:foreground ,planet-fg-2 :background ,planet-bg :bold t))))
    `(cperl-hash-face                     ((,class (:foreground ,planet-fg-2 :background ,planet-bg :bold t))))
 
+   ;; diff
+   `(diff-removed-face                   ((,class (:foreground ,planet-bg-2 :background ,planet-error))))
+   `(diff-added-face                     ((,class (:foreground ,planet-bg-2 :background ,planet-green))))
+
+   ;; magit
+   `(magit-diff-none                     ((,class (:foreground ,planet-fg :background ,planet-bg-2))))
+   `(magit-diff-hunk-header              ((,class (:background ,planet-bg-2 :foreground ,planet-fg-1))))
+   `(magit-diff-file-header              ((,class (:background ,planet-bg-4 :foreground ,planet-fg-2))))
+
    ;; org
 
    ;; erc
