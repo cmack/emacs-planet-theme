@@ -1,4 +1,4 @@
-;;; planet-theme.el --- A dark theme inspired by Gmail's 'Planets' theme of yore.
+;;; planet-theme.el --- A dark theme inspired by Gmail's 'Planets' theme of yore
 
 ;; Copyright (C) 2012 - 2014 Charlie McMackin
 
@@ -6,7 +6,7 @@
 ;; URL: https://github.com/cmack/emacs-planet-theme
 ;; Keywords: themes
 ;; Version: 0.1
-;; Package-Requires: ((emacs "24.1"))
+;; Package-Requires: ((emacs "24"))
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
