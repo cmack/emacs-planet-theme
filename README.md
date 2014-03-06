@@ -1,4 +1,4 @@
-# emacs-planet-theme #
+# Planet Theme for Emacs 24 #
 
 ## Introduction ##
 
@@ -14,10 +14,7 @@ This theme is being testing with Emacs 24 and `deftheme` --
 
 ### Stand-alone installation ###
 
-Currently the only way to get this theme is to `clone` or `fork`
-[me on Github](https://github.com/cmack/emacs-planet-theme). [Marmalade](http://marmalade-repo.org/)
-support is planned for the future when I feel this theme is more
-well defined and feature-full.
+Currently, the only way to get this theme is from [on Github](https://github.com/cmack/emacs-planet-theme). [MELPA](http://melpa.milkbox.net/) support is forthcoming.
 
 After downloading, place `planet-theme.el` in a folder in your Emacs'
 `custom-theme` load path.  I have mine defined in `.emacs` as:
@@ -40,7 +37,7 @@ or by default in your `.emacs` file with
 
 ## Bugs & Improvements ##
 
-There should not be any bugs but rather 'ugly' colors. I am using this
-theme everyday and I will be adding and adjusting accent colors as well
-as support for other modes as I work with them. I do plan to keep the
+There should not be any bugs but rather only colors that "don't fit". I am
+using this theme everyday and I will be adding and adjusting accent colors as
+well as support for other modes as I work with them. I plan to keep the basic
 ground colors the same.
