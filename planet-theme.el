@@ -183,6 +183,17 @@
    '(speedbar-selected-face              ((t (:foreground "red"))))
    '(speedbar-highlight-face             ((t (:background "green"))))
 
+   ;; ido
+   `(ido-only-match                      ((t (:foreground ,planet-green))))
+   `(ido-first-match                     ((t (:foreground ,planet-blue))))
+   `(ido-incomplete-regexp               ((t (:foreground ,planet-error))))
+   `(ido-subdir                          ((t (:foreground ,planet-warning))))
+   `(ido-indicator                       ((t (:foreground ,planet-purple))))
+   `(ido-virtual                         ((t (:foreground ,planet-fg-1))))
+
+   ;; minibuffer
+   `(minibuffer-prompt                   ((t (:foreground ,planet-fg-2 :bold t :background nil))))
+
    ))
 
 ;;;###autoload
