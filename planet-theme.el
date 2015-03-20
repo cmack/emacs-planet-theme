@@ -1,6 +1,6 @@
 ;;; planet-theme.el --- A dark theme inspired by Gmail's 'Planets' theme of yore
 
-;; Copyright (C) 2012 - 2014 Charlie McMackin
+;; Copyright (C) 2012 - 2015 Charlie McMackin
 
 ;; Author: Charlie McMackin <charlie.mac@gmail.com>
 ;; URL: https://github.com/cmack/emacs-planet-theme
@@ -36,6 +36,8 @@
 ;; name. Google has since changed that theme completely but I still enjoy the
 ;; readability of the original. Palette wise, I plan to keep the ground colors
 ;; the same but will add accent colors as I find them and feel they fit.
+
+;;; Code:
 
 (deftheme planet
   "A dark theme inspired by Gmail's 'Planets' theme of yore")
