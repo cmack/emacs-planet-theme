@@ -193,6 +193,16 @@
    `(ido-indicator                       ((t (:foreground ,planet-purple))))
    `(ido-virtual                         ((t (:foreground ,planet-fg-1))))
 
+   ;; helm
+   `(helm-ff-file                        ((t (:foreground ,planet-fg))))
+   `(helm-ff-directory                   ((t (:foreground ,planet-blue :bold t))))
+   `(helm-ff-dotted-directory            ((t (:foreground ,planet-fg-1))))
+   `(helm-ff-prefix                      ((t (:foreground ,planet-fg-2  :background ,planet-bg-3))))
+   `(helm-match                          ((t (:foreground ,planet-fg-2 :bold t))))
+   '(helm-selection                      ((t (:inherit highlight))))
+   `(helm-source-header                  ((t (:background ,planet-bg-2 :foreground ,planet-fg :weight bold :height 1.3))))
+   `(helm-candidate-number               ((t (:foreground "yellow" :background ,planet-bg-4))))
+
    ;; minibuffer
    `(minibuffer-prompt                   ((t (:foreground ,planet-fg-2 :bold t :background nil))))
 
