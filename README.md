@@ -12,16 +12,22 @@ This theme is being testing with Emacs 24 and `deftheme` --
 
 ## Installation ##
 
+### MELPA ###
+
+    M-x package-install RET planet-theme
+
 ### Stand-alone installation ###
 
-Currently, the only way to get this theme is from [on Github](https://github.com/cmack/emacs-planet-theme). [MELPA](http://melpa.milkbox.net/) support is forthcoming.
+Download from [on Github](https://github.com/cmack/emacs-planet-theme).
 
 After downloading, place `planet-theme.el` in a folder in your Emacs'
 `custom-theme` load path.  I have mine defined in `.emacs` as:
 
     (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
 
-Once the file is loaded, it can be applied interactively with
+### Apply Theme
+
+After installation, it can be applied interactively with
 
     M-x load-theme RET planet
 
