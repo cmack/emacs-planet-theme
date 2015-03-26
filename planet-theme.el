@@ -88,7 +88,7 @@
    '(font-lock-comment-face              ((t (:foreground "grey40" :italic t))))
    '(font-lock-comment-delimiter-face    ((t (:inherit font-lock-comment-face))))
    `(font-lock-constant-face             ((,class (:foreground ,planet-purple))))
-   '(font-lock-doc-face                  ((t (:inherit font-lock-string-face))))
+   '(font-lock-doc-face                  ((t (:foreground "grey50"))))
    `(font-lock-function-name-face        ((,class (:foreground ,planet-blue :bold t))))
    `(font-lock-negation-char-face        ((,class (:foreground ,planet-warning :bold nil))))
    '(font-lock-preprocessor-face         ((t (:inherit font-lock-builtin-face))))
