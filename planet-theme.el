@@ -86,20 +86,18 @@
 
    ;; font-lock
    '(font-lock-comment-face              ((t (:foreground "grey40" :italic t))))
+   '(font-lock-comment-delimiter-face    ((t (:inherit font-lock-comment-face))))
    `(font-lock-constant-face             ((,class (:foreground ,planet-purple))))
+   '(font-lock-doc-face                  ((t (:inherit font-lock-string-face))))
    `(font-lock-function-name-face        ((,class (:foreground ,planet-blue :bold t))))
+   `(font-lock-negation-char-face        ((,class (:foreground ,planet-warning :bold nil))))
+   '(font-lock-preprocessor-face         ((t (:inherit font-lock-builtin-face))))
    `(font-lock-string-face               ((,class (:foreground ,planet-green :bold nil))))
-   '(font-lock-type-face                 ((t (:foreground "#e9b96e"))))
+   `(font-lock-type-face                 ((,class (:foreground ,planet-warning))))
    `(font-lock-warning-face              ((,class (:foreground ,planet-error :bold t))))
    `(font-lock-builtin-face              ((,class (:bold t :foreground ,planet-fg-1))))
    `(font-lock-keyword-face              ((,class (:foreground ,planet-fg-2 :bold t))))
    `(font-lock-variable-name-face        ((,class (:foreground ,planet-fg-2))))
-
-   ;; to consider:
-   ;; '(font-lock-comment-delimiter-face ((t (:foreground "#2e3436" :weight bold))))
-   ;; '(font-lock-doc-face               ((t (:foreground "#00815b"))))
-   ;; '(font-lock-negation-char-face     ((t (:foreground "#c3ab15"))))
-   ;; '(font-lock-preprocessor-face      ((t (:foreground "#c3ab15" :weight bold))))
 
    ;; slime
    `(slime-repl-inputed-output-face      ((,class (:foreground ,planet-purple))))
