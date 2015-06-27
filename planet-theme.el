@@ -204,6 +204,18 @@
    ;; minibuffer
    `(minibuffer-prompt                   ((t (:foreground ,planet-fg-2 :bold t :background nil))))
 
+   ;; company
+   `(company-echo-common ((t (:foreground ,planet-error))))
+   `(company-preview ((t (:background ,planet-bg-4 :foreground "wheat"))))
+   `(company-preview-common ((t (:inherit company-preview :foreground ,planet-fg-2 :weight bold))))
+   '(company-scrollbar-bg ((t (:inherit company-tooltip))))
+   `(company-scrollbar-fg ((t (:background ,planet-fg))))
+   `(company-tooltip ((t (:background ,planet-bg-2 :foreground ,planet-fg-1))))
+   `(company-tooltip-annotation ((t (:inherit company-tooltip :foreground ,planet-fg))))
+   `(company-tooltip-common ((t (:inherit company-tooltip :foreground ,planet-warning))))
+   `(company-tooltip-common-selection ((t (:inherit company-tooltip-selection :foreground ,planet-warning))))
+   `(company-tooltip-selection ((t (:inherit company-tooltip :background ,planet-bg-4))))
+
    ))
 
 ;;;###autoload
