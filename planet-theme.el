@@ -75,14 +75,59 @@
    `(fringe                              ((,class (:background ,planet-bg-2))))
    `(header-line                         ((,class (:background ,planet-bg-3 :foreground ,planet-fg-2 :box nil))))
 
-   ;; mode-line
-   '(mode-line-emphasis                  ((t (:bold t :weight bold))))
-   `(mode-line                           ((,class (:background ,planet-bg-4 :foreground ,planet-fg-2))))
-   `(mode-line-buffer-id                 ((,class (:foreground ,planet-fg-1))))
-   `(mode-line-highlight                 ((,class (:box (:line-width 1 :color ,planet-bg-2 :style released-button)))))
-   `(mode-line-inactive                  ((,class (:background ,planet-bg-2 :foreground ,planet-fg :box (:line-width -1 :color ,planet-bg-2 :style nil) :weight light))))
-   `(modeline-mousable                   ((t (:background ,planet-bg-4 :foreground ,planet-fg-2))))
-   `(modeline-mousable-minor-mode        ((t (:background ,planet-bg-4 :foreground ,planet-fg-2))))
+   ;; company
+   `(company-echo-common ((t (:foreground ,planet-error))))
+   `(company-preview ((t (:background ,planet-bg-4 :foreground "wheat"))))
+   `(company-preview-common ((t (:inherit company-preview :foreground ,planet-fg-2 :weight bold))))
+   '(company-scrollbar-bg ((t (:inherit company-tooltip))))
+   `(company-scrollbar-fg ((t (:background ,planet-fg))))
+   `(company-tooltip ((t (:background ,planet-bg-2 :foreground ,planet-fg-1))))
+   `(company-tooltip-annotation ((t (:inherit company-tooltip :foreground ,planet-fg))))
+   `(company-tooltip-common ((t (:inherit company-tooltip :foreground ,planet-warning))))
+   `(company-tooltip-common-selection ((t (:inherit company-tooltip-selection :foreground ,planet-warning))))
+   `(company-tooltip-selection ((t (:inherit company-tooltip :background ,planet-bg-4))))
+
+   ;; cperl
+   `(cperl-array-face                    ((,class (:foreground ,planet-fg-2 :background ,planet-bg :bold t))))
+   `(cperl-hash-face                     ((,class (:foreground ,planet-fg-2 :background ,planet-bg :bold t))))
+
+   ;; custom
+   '(custom-invalid-face                 ((t (:foreground "yellow" :background "red"))))
+   '(custom-rogue-face                   ((t (:foreground "pink" :background "black"))))
+   '(custom-modified-face                ((t (:foreground "white" :background "blue"))))
+   '(custom-set-face                     ((t (:foreground "blue" :background "white"))))
+   '(custom-changed-face                 ((t (:foreground "white" :background "blue"))))
+   '(custom-saved-face                   ((t (:underline t))))
+   '(custom-button-face                  ((t (nil))))
+   '(custom-documentation-face           ((t (nil))))
+   '(custom-state-face                   ((t (:foreground "dark green"))))
+   '(custom-variable-tag-face            ((t (:foreground "blue" :underline t))))
+   '(custom-variable-button-face         ((t (:bold t :underline t))))
+   '(custom-face-tag-face                ((t (:underline t))))
+   '(custom-group-tag-face-1             ((t (:foreground "red" :underline t))))
+   '(custom-group-tag-face               ((t (:foreground "blue" :underline t))))
+
+   ;; diff
+   `(diff-removed                        ((,class (:foreground ,planet-bg-2 :background ,planet-error))))
+   `(diff-added                          ((,class (:foreground ,planet-bg-2 :background ,planet-green))))
+
+   ;; erc
+   '(erc-action-face                     ((t (:bold t :weight bold))))
+   '(erc-bold-face                       ((t (:bold t :weight bold))))
+   '(erc-command-indicator-face          ((t (:bold t :weight bold))))
+   '(erc-current-nick-face               ((t (:bold t :foreground "DarkTurquoise"))))
+   '(erc-default-face                    ((t (nil))))
+   '(erc-direct-msg-face                 ((t (:foreground "#e9b96e"))))
+   '(erc-error-face                      ((t (:foreground "red"))))
+   `(erc-header-line                     ((,class (:background ,planet-bg-3 :foreground ,planet-fg))))   '(erc-input-face                      ((t (:foreground "brown"))))
+   `(erc-inverse-face                    ((,class (:background ,planet-fg :foreground ,planet-bg))))
+   '(erc-my-nick-face                    ((t (:bold t :foreground "brown" :weight bold))))
+   '(erc-nick-default-face               ((t (:bold t :weight bold))))
+   '(erc-nick-msg-face                   ((t (:bold t :foreground "IndianRed" :weight bold))))
+   '(erc-notice-face                     ((t (:bold t :foreground "SlateBlue" :weight bold))))
+   `(erc-prompt-face                     ((,class (:bold t :background ,planet-bg :foreground ,planet-blue :weight bold))))
+   ;; '(erc-timestamp-face                  ((t (:bold t :foreground "green"))))
+   '(erc-underline-face                  ((t (:underline t))))
 
    ;; font-lock
    '(font-lock-comment-face              ((t (:foreground "grey40" :italic t))))
@@ -99,98 +144,6 @@
    `(font-lock-keyword-face              ((,class (:foreground ,planet-fg-2 :bold t))))
    `(font-lock-variable-name-face        ((,class (:foreground ,planet-fg-2))))
 
-   ;; slime
-   `(slime-repl-inputed-output-face      ((,class (:foreground ,planet-purple))))
-   `(slime-error-face                    ((,class (:underline ,planet-error))))
-   `(slime-warning-face                  ((,class (:underline ,planet-warning))))
-   ;; `(slime-note-face                     ((,class (:underline ,planet-warning))))
-   ;; `(slime-style-warning-face            ((,class (:underline ,planet-warning))))
-
-   ;; js2
-   `(js2-warning-face                    ((,class (:underline ,planet-warning))))
-   `(js2-error-face                      ((,class (:foreground ,planet-error))))
-   `(js2-external-variable               ((,class (:foreground ,planet-warning))))
-   `(js2-function-param                  ((,class (:foreground ,planet-green))))
-
-   ;; cperl
-   `(cperl-array-face                    ((,class (:foreground ,planet-fg-2 :background ,planet-bg :bold t))))
-   `(cperl-hash-face                     ((,class (:foreground ,planet-fg-2 :background ,planet-bg :bold t))))
-
-   ;; diff
-   `(diff-removed                        ((,class (:foreground ,planet-bg-2 :background ,planet-error))))
-   `(diff-added                          ((,class (:foreground ,planet-bg-2 :background ,planet-green))))
-
-   ;; magit
-   `(magit-diff-del                      ((,class (:inherit diff-removed))))
-   `(magit-diff-add                      ((,class (:inherit diff-added))))
-   `(magit-diff-none                     ((,class (:foreground ,planet-fg :background ,planet-bg-2))))
-   `(magit-diff-hunk-header              ((,class (:background ,planet-bg-2 :foreground ,planet-fg-1))))
-   `(magit-diff-file-header              ((,class (:background ,planet-bg-4 :foreground ,planet-fg-2))))
-
-   ;; org
-
-   ;; erc
-   '(erc-action-face                     ((t (:bold t :weight bold))))
-   '(erc-bold-face                       ((t (:bold t :weight bold))))
-   '(erc-command-indicator-face          ((t (:bold t :weight bold))))
-   '(erc-default-face                    ((t (nil))))
-   '(erc-direct-msg-face                 ((t (:foreground "#e9b96e"))))
-   '(erc-error-face                      ((t (:foreground "red"))))
-   '(erc-input-face                      ((t (:foreground "brown"))))
-   `(erc-inverse-face                    ((,class (:background ,planet-fg :foreground ,planet-bg))))
-   '(erc-my-nick-face                    ((t (:bold t :foreground "brown" :weight bold))))
-   '(erc-nick-default-face               ((t (:bold t :weight bold))))
-   '(erc-nick-msg-face                   ((t (:bold t :foreground "IndianRed" :weight bold))))
-   '(erc-notice-face                     ((t (:bold t :foreground "SlateBlue" :weight bold))))
-   `(erc-prompt-face                     ((,class (:bold t :background ,planet-bg :foreground ,planet-blue :weight bold))))
-   '(erc-underline-face                  ((t (:underline t))))
-   `(erc-header-line                     ((,class (:background ,planet-bg-3 :foreground ,planet-fg))))
-   '(erc-current-nick-face               ((t (:bold t :foreground "DarkTurquoise"))))
-   ;; '(erc-timestamp-face                  ((t (:bold t :foreground "green"))))
-   ;; whitespace-mode
-
-   ;; show-paren
-   '(show-paren-match-face               ((t (:background "light blue"))))
-   '(show-paren-mismatch-face            ((t (:foreground "white" :background "purple"))))
-
-   ;; widgets
-   '(widget-documentation-face           ((t (:foreground "dark green"))))
-   '(widget-button-face                  ((t (:bold t))))
-   '(widget-field-face                   ((t (:background "gray85"))))
-   '(widget-single-line-field-face       ((t (:background "gray85"))))
-   '(widget-inactive-face                ((t (:foreground "dim gray"))))
-   '(widget-button-pressed-face          ((t (:foreground "red"))))
-   ;; custom
-   '(custom-invalid-face                 ((t (:foreground "yellow" :background "red"))))
-   '(custom-rogue-face                   ((t (:foreground "pink" :background "black"))))
-   '(custom-modified-face                ((t (:foreground "white" :background "blue"))))
-   '(custom-set-face                     ((t (:foreground "blue" :background "white"))))
-   '(custom-changed-face                 ((t (:foreground "white" :background "blue"))))
-   '(custom-saved-face                   ((t (:underline t))))
-   '(custom-button-face                  ((t (nil))))
-   '(custom-documentation-face           ((t (nil))))
-   '(custom-state-face                   ((t (:foreground "dark green"))))
-   '(custom-variable-tag-face            ((t (:foreground "blue" :underline t))))
-   '(custom-variable-button-face         ((t (:bold t :underline t))))
-   '(custom-face-tag-face                ((t (:underline t))))
-   '(custom-group-tag-face-1             ((t (:foreground "red" :underline t))))
-   '(custom-group-tag-face               ((t (:foreground "blue" :underline t))))
-   ;; speedbar
-   '(speedbar-button-face                ((t (:foreground "green4"))))
-   '(speedbar-file-face                  ((t (:foreground "cyan4"))))
-   '(speedbar-directory-face             ((t (:foreground "blue4"))))
-   '(speedbar-tag-face                   ((t (:foreground "brown"))))
-   '(speedbar-selected-face              ((t (:foreground "red"))))
-   '(speedbar-highlight-face             ((t (:background "green"))))
-
-   ;; ido
-   `(ido-only-match                      ((t (:foreground ,planet-green))))
-   `(ido-first-match                     ((t (:foreground ,planet-blue))))
-   `(ido-incomplete-regexp               ((t (:foreground ,planet-error))))
-   `(ido-subdir                          ((t (:foreground ,planet-warning))))
-   `(ido-indicator                       ((t (:foreground ,planet-purple))))
-   `(ido-virtual                         ((t (:foreground ,planet-fg-1))))
-
    ;; helm
    `(helm-ff-file                        ((t (:foreground ,planet-fg))))
    `(helm-ff-directory                   ((t (:foreground ,planet-blue :bold t))))
@@ -201,20 +154,69 @@
    `(helm-source-header                  ((t (:background ,planet-bg-2 :foreground ,planet-fg :weight bold :height 1.3))))
    `(helm-candidate-number               ((t (:foreground "yellow" :background ,planet-bg-4))))
 
+   ;; ido
+   `(ido-only-match                      ((t (:foreground ,planet-green))))
+   `(ido-first-match                     ((t (:foreground ,planet-blue))))
+   `(ido-incomplete-regexp               ((t (:foreground ,planet-error))))
+   `(ido-subdir                          ((t (:foreground ,planet-warning))))
+   `(ido-indicator                       ((t (:foreground ,planet-purple))))
+   `(ido-virtual                         ((t (:foreground ,planet-fg-1))))
+
+   ;; js2
+   `(js2-warning-face                    ((,class (:underline ,planet-warning))))
+   `(js2-error-face                      ((,class (:foreground ,planet-error))))
+   `(js2-external-variable               ((,class (:foreground ,planet-warning))))
+   `(js2-function-param                  ((,class (:foreground ,planet-green))))
+
+   ;; magit
+   `(magit-diff-del                      ((,class (:inherit diff-removed))))
+   `(magit-diff-add                      ((,class (:inherit diff-added))))
+   `(magit-diff-none                     ((,class (:foreground ,planet-fg :background ,planet-bg-2))))
+   `(magit-diff-hunk-header              ((,class (:background ,planet-bg-2 :foreground ,planet-fg-1))))
+   `(magit-diff-file-header              ((,class (:background ,planet-bg-4 :foreground ,planet-fg-2))))
+
    ;; minibuffer
    `(minibuffer-prompt                   ((t (:foreground ,planet-fg-2 :bold t :background nil))))
 
-   ;; company
-   `(company-echo-common ((t (:foreground ,planet-error))))
-   `(company-preview ((t (:background ,planet-bg-4 :foreground "wheat"))))
-   `(company-preview-common ((t (:inherit company-preview :foreground ,planet-fg-2 :weight bold))))
-   '(company-scrollbar-bg ((t (:inherit company-tooltip))))
-   `(company-scrollbar-fg ((t (:background ,planet-fg))))
-   `(company-tooltip ((t (:background ,planet-bg-2 :foreground ,planet-fg-1))))
-   `(company-tooltip-annotation ((t (:inherit company-tooltip :foreground ,planet-fg))))
-   `(company-tooltip-common ((t (:inherit company-tooltip :foreground ,planet-warning))))
-   `(company-tooltip-common-selection ((t (:inherit company-tooltip-selection :foreground ,planet-warning))))
-   `(company-tooltip-selection ((t (:inherit company-tooltip :background ,planet-bg-4))))
+   ;; mode-line
+   '(mode-line-emphasis                  ((t (:bold t :weight bold))))
+   `(mode-line                           ((,class (:background ,planet-bg-4 :foreground ,planet-fg-2))))
+   `(mode-line-buffer-id                 ((,class (:foreground ,planet-fg-1))))
+   `(mode-line-highlight                 ((,class (:box (:line-width 1 :color ,planet-bg-2 :style released-button)))))
+   `(mode-line-inactive                  ((,class (:background ,planet-bg-2 :foreground ,planet-fg :box (:line-width -1 :color ,planet-bg-2 :style nil) :weight light))))
+   `(modeline-mousable                   ((t (:background ,planet-bg-4 :foreground ,planet-fg-2))))
+   `(modeline-mousable-minor-mode        ((t (:background ,planet-bg-4 :foreground ,planet-fg-2))))
+
+   ;; org
+
+   ;; show-paren
+   '(show-paren-match-face               ((t (:background "light blue"))))
+   '(show-paren-mismatch-face            ((t (:foreground "white" :background "purple"))))
+
+   ;; slime
+   `(slime-repl-inputed-output-face      ((,class (:foreground ,planet-purple))))
+   `(slime-error-face                    ((,class (:underline ,planet-error))))
+   `(slime-warning-face                  ((,class (:underline ,planet-warning))))
+   ;; `(slime-note-face                     ((,class (:underline ,planet-warning))))
+   ;; `(slime-style-warning-face            ((,class (:underline ,planet-warning))))
+
+   ;; speedbar
+   '(speedbar-button-face                ((t (:foreground "green4"))))
+   '(speedbar-file-face                  ((t (:foreground "cyan4"))))
+   '(speedbar-directory-face             ((t (:foreground "blue4"))))
+   '(speedbar-tag-face                   ((t (:foreground "brown"))))
+   '(speedbar-selected-face              ((t (:foreground "red"))))
+   '(speedbar-highlight-face             ((t (:background "green"))))
+
+   ;; whitespace-mode
+
+   ;; widgets
+   '(widget-documentation-face           ((t (:foreground "dark green"))))
+   '(widget-button-face                  ((t (:bold t))))
+   '(widget-field-face                   ((t (:background "gray85"))))
+   '(widget-single-line-field-face       ((t (:background "gray85"))))
+   '(widget-inactive-face                ((t (:foreground "dim gray"))))
+   '(widget-button-pressed-face          ((t (:foreground "red"))))
 
    ))
 
