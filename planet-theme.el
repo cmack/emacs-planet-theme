@@ -155,6 +155,9 @@
    '(helm-selection ((t (:inherit highlight))))
    `(helm-source-header ((t (:background ,planet-bg-2 :foreground ,planet-fg :weight bold :height 1.3))))
 
+   ;; hl-line
+   `(hl-line ((t (:background ,planet-bg-3))))
+
    ;; ido
    `(ido-first-match ((t (:foreground ,planet-blue))))
    `(ido-incomplete-regexp ((t (:foreground ,planet-error))))
