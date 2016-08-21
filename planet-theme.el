@@ -50,11 +50,12 @@
       (planet-bg-2    "#090c10")
       (planet-bg-3    "#243248")
       (planet-bg-4    "#2A3A53")
-      (planet-blue    "#729fcf")
-      (planet-green   "#649d8a")
-      (planet-purple  "#a6a1ea")
+      (planet-error   "#ff8683")
       (planet-warning "#e9b96e")
-      (planet-error   "#ff8683"))
+      (planet-yellow  "#fbf2c0")
+      (planet-green   "#649d8a")
+      (planet-blue    "#729fcf")
+      (planet-purple  "#a6a1ea"))
   (custom-theme-set-faces
    'planet
 
