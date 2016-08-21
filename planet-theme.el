@@ -75,6 +75,7 @@
    `(region ((,class (:foreground ,planet-bg :background ,planet-fg-2))))
    `(secondary-selection ((,class (:foreground ,planet-bg :background ,planet-blue))))
    '(underline ((t (:underline t))))
+   `(trailing-whitespace ((,class (:background ,planet-error))))
 
    ;; company
    `(company-echo-common ((t (:foreground ,planet-error))))
