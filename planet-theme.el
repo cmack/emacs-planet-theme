@@ -221,12 +221,13 @@
 
 
    ;; speedbar
-   '(speedbar-button-face ((t (:foreground "green4"))))
-   '(speedbar-directory-face ((t (:foreground "blue4"))))
-   '(speedbar-file-face ((t (:foreground "cyan4"))))
-   '(speedbar-highlight-face ((t (:background "green"))))
-   '(speedbar-selected-face ((t (:foreground "red"))))
-   '(speedbar-tag-face ((t (:foreground "brown"))))
+   `(speedbar-button-face ((t (:foreground ,planet-green))))
+   `(speedbar-directory-face ((t (:foreground ,planet-blue))))
+   `(speedbar-file-face ((t (:foreground ,planet-fg))))
+   `(speedbar-highlight-face ((t (:foreground ,planet-bg :background ,planet-fg-2))))
+   `(speedbar-selected-face ((t (:foreground ,planet-warning))))
+   `(speedbar-separator-face ((t (:foreground ,planet-bg :background ,planet-blue))))
+   `(speedbar-tag-face ((t (:foreground ,planet-yellow))))
 
    ;; whitespace-mode
 
