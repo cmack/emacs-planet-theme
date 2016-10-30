@@ -179,6 +179,10 @@
    `(ido-subdir ((t (:foreground ,planet-warning))))
    `(ido-virtual ((t (:foreground ,planet-fg-1))))
 
+   ;; isearch
+   `(isearch ((,class (:foreground "#880e4f" :background "#ff80ab"))))
+   `(isearch-fail ((,class (:foreground "#b71c1c" :background ,planet-error))))
+
    ;; js2
    `(js2-error-face ((,class (:foreground ,planet-error))))
    `(js2-external-variable ((,class (:foreground ,planet-warning))))
