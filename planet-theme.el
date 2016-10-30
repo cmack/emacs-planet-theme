@@ -212,8 +212,8 @@
    ;; org
 
    ;; show-paren
-   '(show-paren-match-face ((t (:background "light blue"))))
-   '(show-paren-mismatch-face ((t (:foreground "white" :background "purple"))))
+   `(show-paren-match ((t (:foreground ,planet-bg :background ,planet-blue :weight bold))))
+   `(show-paren-mismatch ((t (:foreground ,planet-bg :background ,planet-error :weight bold))))
 
    ;; slime
    `(slime-error-face ((,class (:underline ,planet-error))))
