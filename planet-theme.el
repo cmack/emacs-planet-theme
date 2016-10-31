@@ -42,7 +42,8 @@
 (deftheme planet
   "A dark theme inspired by Gmail's 'Planets' theme of yore")
 
-(let ((class '((class color) (min-colors 89)))
+(let ((class '((class color) (min-colors 88)))
+      (class-true-color '((class color) (min-colors 16777216)))
       (planet-fg      "#8898a9")
       (planet-fg-1    "#d2dde8")
       (planet-fg-2    "#c4dde8")
@@ -59,7 +60,8 @@
   (custom-theme-set-faces
    'planet
 
-   `(default ((,class (:foreground ,planet-fg :background ,planet-bg))))
+   `(default ((,class-true-color (:foreground ,planet-fg :background ,planet-bg))
+              (,class (:foreground "#bcbcbc" :background "#1c1c1c"))))
 
    ;; basic coloring
    '(bold ((t (:bold t))))
@@ -200,8 +202,7 @@
    `(minibuffer-prompt ((t (:foreground ,planet-fg-2 :bold t :background nil))))
 
    ;; mode-line
-
-   `(mode-line ((,class (:background ,planet-bg-4 :foreground ,planet-fg-2))))
+   `(mode-line ((,class-true-color (:background ,planet-bg-4 :foreground ,planet-fg-2))))
    `(mode-line-buffer-id ((,class (:foreground ,planet-fg-1))))
    '(mode-line-emphasis ((t (:bold t :weight bold))))
    `(mode-line-highlight ((,class (:box (:line-width 1 :color ,planet-bg-2 :style released-button)))))
