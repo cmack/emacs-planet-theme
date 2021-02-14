@@ -1,6 +1,6 @@
 ;;; planet-theme.el --- A dark theme inspired by Gmail's 'Planets' theme of yore
 
-;; Copyright (C) 2012 - 2015 Charlie McMackin
+;; Copyright (C) 2012 - 2021 Charlie McMackin
 
 ;; Author: Charlie McMackin <charlie.mac@gmail.com>
 ;; URL: https://github.com/cmack/emacs-planet-theme
